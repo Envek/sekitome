@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  api:
+    build: .
+    ports:
+      - "0.0.0.0:3000:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+    environment:
+      REDIS_URL: 'redis://redis:6379/1'
+      TERM:       xterm
+    command: 'bundle exec rackup -s puma -p 3000 -o 0.0.0.0'
+    #tty:        true
+    stdin_open: true
+
+  redis:
+    image: redis
+    volumes:
+      - './tmp/redis:/data'
+    command: redis-server --appendonly yes

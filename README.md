@@ -30,6 +30,19 @@ Redis is fast and battle-tested key-value in-memory database which persists data
 
 ## Launch
 
+### Via Docker Compose
+
+You will need to have installed:
+
+ - Recent [Docker]
+ - Recent [Docker Compose]
+
+Then just execute next command from this directory:
+
+    docker-compose up
+
+Access Sekitome multiple times on URL like this: http://localhost:3000/?username=Envek
+
 ### Manually
 
 You will need to have installed:
@@ -93,3 +106,5 @@ Can be freely used, distributed, and modified under the terms of the [MIT Licens
 [Puma]: http://puma.io/ (A modern, concurrent web server for Ruby)
 [Redis]: https://redis.io/ (Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker)
 [MIT License]: https://opensource.org/licenses/MIT (A short and simple permissive license with conditions only requiring preservation of copyright and license notices)
+[Docker]: https://www.docker.com/ (Docker is the world’s leading software containerization platform)
+[Docker Compose]: https://docs.docker.com/compose/ (Compose is a tool for defining and running multi-container Docker applications)
