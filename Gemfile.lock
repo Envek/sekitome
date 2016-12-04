@@ -1,0 +1,32 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    connection_pool (2.2.1)
+    json (2.0.2)
+    minitest (5.10.1)
+    oj (2.18.0)
+    puma (3.6.2)
+    rack (2.0.1)
+    rack-minitest (0.0.10)
+      json
+      minitest (~> 5.0)
+      rack-test
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    redis (3.3.2)
+    unicode_utils (1.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  connection_pool
+  oj
+  puma
+  rack
+  rack-minitest
+  redis
+  unicode_utils
+
+BUNDLED WITH
+   1.13.6
